@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery - Project</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Mobile devices sidenav -->
+    <div class="mobile-sidebar" id="mobile-sidebar">
+        <div class="close-sidebar" id="close-sidebar">&times;</div>
+        <div class="sidebar-container">
+            <ul class="sidebar-list">
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">About</a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#projects" class="sidebar-link">Projects</a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#contact" class="sidebar-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- End of Mobile devices sidenav -->
+
+    <!-- start of home section -->
+    <section class="home" id="home">
+        <nav class="navbar">
+            <div class="navbar-container">
+                <!-- Logo container -->
+                <div class="logo">
+                    <a href="#" class="logo-link">
+                        <img src="img/Wilks-white-high-res.png" alt="logo">
+                    </a>
+                </div>
+                <!-- nav-links container -->
+                <div class="links-container">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#projects" class="nav-link">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End of nav-links container -->
+                <!-- Hamburger menu -->
+                <div class="hamburger-menu">
+                    <div class="hamburger-menu-line"></div>
+                    <div class="hamburger-menu-line"></div>
+                    <div class="hamburger-menu-line"></div>
+                </div>
+                <!-- End of Hamburger menu -->
+            </div>
+        </nav>
+        <div class="banner">
+            <h1 class="banner-heading">Radek's jQuery Project</h1>
+            <p class="banner-text">As a beginner web developer I know practice is a key to success so I decide to play with different APIs...  </p>
+            <a href="#projects" class="btn banner-btn">Learn more...</a>
+        </div>
+    </section>
+    <!-- End of home section -->
+
+    <!-- Projects overview section -->
+    <section class="projects" id="projects">
+        <!-- Project section - Heading -->
+        <h2 class="section-heading project-heading">My API Projects</h2>
+        <!-- End of Project section - Heading -->
+    
+        <!-- Projects section content -->
+        <div class="projects-container">
+            <!--Projects images  -->
+            <img src="img/screen.png" alt="Laptops Screen" class="laptop-screen">
+            <img src="img/keyboard.png" alt="Laptops keyboard" class="laptop-keyboard">
+            <!--End of Projects images  -->
+    
+            <!--Projects section Loading  -->
+            <div class="loading-wrapper">
+                <div class="loading">
+                    <i class="fab fa-apple"></i>
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+            <!--End of Projects section Loading  -->
+    
+            <!-- Projects section - Info -->
+            <div class="projects-info">
+                <h3 class="info-heading">API Projects</h3>
+                <p class="info-text">with help of jQuery</p>
+                <button class="info-btn">Click to check</button>
+                <!-- Links to all API projects -->
+                <div class="projects-links">
+                    <ul class="project-links-list">
+                        <!-- Single link -->
+                        <li class="project-links-item">
+                            <h3 class="project-links-heading">Star Wars</h3>
+                            <a href="#star-wars-project" class="project-links-link">
+                                <img src="img/star-wars-img.jpg" alt="Star wars image">
+                            </a>
+                        </li>
+                        <!-- End of Single link -->
+                        <!-- Single link -->
+                        <li class="project-links-item">
+                            <h3 class="project-links-heading">Rick & Morty</h3>
+                            <a href="#rick-morty-project" class="project-links-link">
+                                <img src="img/rick_and_morty-img.jpg" alt="Rick and Morty image">
+                            </a>
+                        </li>
+                        <!-- End of Single link -->
+                        <!-- Single link -->
+                        <li class="project-links-item">
+                            <h3 class="project-links-heading">Dogs API</h3>
+                            <a href="#dogs-project" class="project-links-link">
+                                <img src="img/dog-img.jpg" alt="Image of dog">
+                            </a>
+                        </li>
+                        <!-- End of Single link -->
+                        <!-- Single link -->
+                        <li class="project-links-item">
+                            <h3 class="project-links-heading">Cats API</h3>
+                            <a href="#cats-project" class="project-links-link">
+                                <img src="img/cat-img.jpg" alt="Image of cat">
+                            </a>
+                        </li>
+                        <!-- End of Single link -->
+                    </ul>
+                </div>
+                <!-- End of Links to all API projects -->
+            </div>
+            <!-- End of Projects section - Info -->
+        </div>
+        <!--End of Projects section content -->
+    </section>
+    <!-- End of projects overview section -->
+
+    <!-- Star Wars project section -->
+    <section class="star-wars-project" id="star-wars-project">
+        <h2 class="section-heading star-wars-heading">Star Wars API</h2>
+        <div class="project-container">
+            <!-- Container with characters info -->
+            <div class="info-wrapper info-wrapper-sw">
+                <div class="btn star-wars-btn">Random Star Wars character</div>
+                <!-- Input fields wrapper-->
+                <div class="inputs-wrapper">
+                    <!-- Input group -->
+                    <div class="input-group">
+                        <p>Name: </p>
+                        <input type="text" class="input-field" id="name-sw" disabled>
+                    </div>
+                    <div class="input-group">
+                        <p>Gender: </p>
+                        <input type="text" class="input-field" id="gender-sw" disabled>
+                    </div>
+                    <div class="input-group">
+                        <p>Species: </p>
+                        <input type="text" class="input-field" id="species-sw" disabled>
+                    </div>
+                    <div class="input-group">
+                        <p>Hair color: </p>
+                        <input type="text" class="input-field" id="hair-sw" disabled>
+                    </div>
+                    <div class="input-group">
+                        <p>Skin color: </p>
+                        <input type="text" class="input-field" id="skin-sw" disabled>
+                    </div>
+                </div>
+                <!-- End of Input fields -->
+            </div>
+            <!-- End of Container with characters info -->
+            <div class="img-wrapper img-wrapper-sw" id="img-wrapper-sw">
+                <img src="" alt="" id="img-sw">
+            </div>
+        </div>
+    </section>
+    <!-- Star Wars project section -->
+
+    <section class="section-breaker"></section>
+
+    <!-- Rick and Morty project section -->
+    <section class="rick-morty-project" id="rick-morty-project">
+        <h2 class="section-heading rick-morty-heading">Rick and Morty API</h2>
+        <div class="project-container">
+            <!-- Img container -->
+            <div class="img-wrapper img-wrapper-rm" id="img-wrapper-rm">
+                <img src="https://rickandmortyapi.com/api/character/avatar/671.jpeg" alt="" id="img-rm">
+            </div>
+            <!-- End of image container -->
+            <!-- Container with characters info -->
+            <div class="info-wrapper info-wrapper-rm">
+                <div class="btn rick-morty-btn">Random Rick and Morty character</div>
+                <!-- Input fields wrapper-->
+                <div class="inputs-wrapper">
+                    <!-- Input group -->
+                    <div class="input-group">
+                        <p>Name: </p>
+                        <input type="text" class="input-field" id="name-rm" disabled>
+                    </div>
+                    <div class="input-group">
+                        <p>Gender: </p>
+                        <input type="text" class="input-field" id="gender-rm" disabled>
+                    </div>
+                    <div class="input-group">
+                        <p>Species: </p>
+                        <input type="text" class="input-field" id="species-rm" disabled>
+                    </div>
+                    <div class="input-group">
+                        <p>Type: </p>
+                        <input type="text" class="input-field" id="type-rm" disabled>
+                    </div>
+                    <div class="input-group">
+                        <p>Status: </p>
+                        <input type="text" class="input-field" id="status-rm" disabled>
+                    </div>
+                </div>
+                <!-- End of Input fields -->
+            </div>
+            <!-- End of Container with characters info -->
+        </div>
+    </section>
+    <!-- Rick and Morty project section -->
+
+    <section class="section-breaker"></section>
+
+    <!-- Dogs section -->
+    <section class="dogs-project" id="dogs-project">
+        <h2 class="section-heading dogs-heading">Dogs API</h2>
+        <div class="project-container">
+            <!-- Container with characters info -->
+            <div class="info-wrapper">
+
+                <!-- Dropdown populated with dog breeds -->
+                <select name="select-breed" id="select-breed" class="select-breed">
+                    <option value="none">Select breed</option>
+                </select>
+                <!-- Input fields wrapper-->
+                <div class="inputs-wrapper">
+                    <!-- Input group -->
+                    <div class="input-group">
+                        <p>Name: </p>
+                        <input type="text" class="input-field" id="name-dog" disabled>
+                    </div>
+                    <div class="input-group">
+                        <p>Bred for: </p>
+                        <textarea id="bred_for-dog" class="input-field" disabled></textarea>
+                    </div>
+                    <div class="input-group">
+                        <p>Bred group: </p>
+                        <input type="text" class="input-field" id="breed_group-dog" disabled>
+                    </div>
+                    <div class="input-group">
+                        <p>Life span: </p>
+                        <input type="text" class="input-field" id="life_span-dog" disabled>
+                    </div>
+                    <div class="input-group">
+                        <p>Temperament: </p>
+                        <textarea id="temperament-dog" class="input-field" disabled></textarea>
+                    </div>
+                </div>
+                <!-- End of Input fields -->
+            </div>
+            <!-- End of Container with dogs info -->
+            <div class="img-wrapper img-wrapper-dogs" id="img-wrapper-dog">
+                <img src="" alt="" id="img-dog">
+            </div>
+        </div>
+    </section>
+    <!-- Ebd of dogs project section -->
+
+    <section class="section-breaker"></section>
+
+    <!-- Cats section -->
+    <section class="cats-project" id="cats-project">
+        <h2 class="section-heading cats-heading">Cats API</h2>
+        <p class="cats-paragraph">
+            Find a cat picture for each status code
+        </p>
+        <div class="project-container cats-project-container">
+            
+            <div class="btn cats-btn">Select random cat</div>
+           
+            <!-- End of Container with dogs info -->
+            <div class="img-wrapper img-wrapper-cats" id="img-wrapper-cat">
+                <img src="https://http.cat/100" alt="" id="img-cat">
+            </div>
+        </div>
+    </section>
+    <!-- End of cats project section -->
+
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+        <div class="contact-wrapper">
+            <div class="contact-left-side"></div>
+            <div class="contact-right-side">
+                <h2 class="section-heading contact-heading">Contact</h2>
+                <p class="contact-paragraph">*I have play with $.post here. Check your console</p>
+                <form class="contact-form">
+                    <div class="contact-input-group">
+                        <input type="text" class="contact-input-field contact-input" id="contact-name" required>
+                        <label class="contact-input-label">Full Name</label>
+                    </div>
+                    <div class="contact-input-group">
+                        <input type="email" class="contact-input-field contact-input" id="contact-email" required>
+                        <label class="contact-input-label">Email</label>
+                    </div>
+                    <div class="contact-input-group">
+                        <textarea class="contact-input-field contact-textarea" id="contact-message" required></textarea>
+                        <label class="contact-input-label contact-input-message">Message</label>
+                    </div>
+                    <input type="button" class="contact-btn contact-input" value="Submit">
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- End of Contact section -->
+
+    <!-- Modal for incorrect form submissions -->
+    <div id="contact-alert" class="contact-alert">
+        <div class="contact-close">&times;</div>
+        <div class="contact-alert-container">
+          <div id="contact-alert-field" class="contact-alert-field"></div>
+        </div> 
+    </div>
+    <!-- End of Modal for incorrect form submissions -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-copyright">
+                Copyright &copy; 2021, Radek Wilk. All Rights Reserved.
+            </p>
+            <div class="footer-social-list">
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- End of Footer -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>   
+<script src="js/script.js"></script>    
+</body>
+</html>

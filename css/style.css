@@ -1,0 +1,1154 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+
+/* General settings */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  box-sizing: border-box;
+}
+
+.btn {
+  width: 20rem;
+  padding: 1rem 1.5rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0.3rem;
+}
+
+.section-breaker {
+  width: 100%;
+  height: 15rem;
+  background-color: #ccc;
+}
+/* End of general settings */
+
+/* Mobile devices sidebar */
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background-color: #f5f5f5;
+  z-index: 200;
+  display: none;
+}
+
+.close-sidebar {
+  color: #141414;
+  font-size: 3.5rem;
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  transition: color 0.4s;
+}
+
+.close-sidebar:hover {
+  cursor: pointer;
+  color: #a9633b;
+}
+
+.sidebar-list {
+  margin: 12rem auto 0 auto;
+  width: 90%;
+  text-align: center;
+}
+
+.sidebar-item {
+  margin-bottom: 2rem;
+}
+
+.sidebar-link,
+.sidebar-link:visited {
+  color: #141414;
+  font-size: 2.5rem;
+  transition: color 0.4s;
+}
+
+.sidebar-item:hover .sidebar-link {
+  color: #a9633b;
+}
+
+.hamburger-menu {
+  position: absolute;
+  top: 3rem;
+  right: 1rem;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  display: none;
+}
+
+.hamburger-menu-line {
+  background-color: #ccc;
+  width: 80%;
+  height: 0.3rem;
+  transition: background-color 0.4s;
+}
+
+.hamburger-menu-line:not(:last-child) {
+  margin-bottom: 0.8rem;
+}
+
+.hamburger-menu:hover .hamburger-menu-line {
+  background-color: #a9633b;
+  cursor: pointer;
+}
+
+/* End of Mobile devices sidebar */
+
+/* Home section */
+.home {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
+    /* Photo by <a href="https://unsplash.com/@jakeblucker?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jake Blucker</a> on <a href="/s/photos/road?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
+      url(../img/bg-img.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.navbar {
+  width: 100%;
+  height: 10rem;
+}
+
+.navbar-container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  width: 20rem;
+  color: #ccc;
+}
+
+.logo img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.links-container {
+  height: 100%;
+}
+
+.nav-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-item {
+  display: inline-block;
+  margin-right: 2.5rem;
+}
+
+.nav-link {
+  color: #ccc;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  transition: color 0.5s;
+}
+
+.nav-item:hover .nav-link {
+  color: #a9633b;
+}
+
+.banner {
+  position: absolute;
+  left: 8rem;
+  bottom: 8rem;
+  width: 70rem;
+  height: 28rem;
+  color: #ccc;
+  border: 1px solid #a9633b;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.banner-heading {
+  font-size: 5rem;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.banner-text {
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  line-height: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.banner-btn {
+  background-color: #a9633b;
+  color: #ccc;
+  box-shadow: 0.1rem 0.1rem 0.5rem rgba(116, 116, 116, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.banner-btn:hover {
+  transform: translateY(-0.2rem);
+  box-shadow: 0.1rem 0.1rem 1.5rem rgba(116, 116, 116, 0.5);
+}
+/* End of home section */
+
+/* laptop opening section */
+.projects {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 8rem 0;
+}
+
+.section-heading {
+  font-size: 8rem;
+  font-weight: 200;
+  color: #ccc;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.projects-container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  perspective: 1000rem;
+  position: relative;
+}
+
+.projects-container img {
+  width: inherit;
+}
+
+.laptop-screen {
+  transform: rotateX(-80deg);
+  transform-origin: bottom;
+}
+
+.loading-wrapper {
+  position: absolute;
+  width: 60%;
+  height: 85%;
+  top: 6%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../img/desktop-bg.jpg) center no-repeat;
+  z-index: -1;
+  opacity: 0;
+}
+
+.loading {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loading i {
+  font-size: 10rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.progress-bar {
+  width: 22rem;
+  height: 0.3rem;
+  background-color: #333;
+  border-radius: 5rem;
+  position: relative;
+}
+
+.progress-bar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #fff;
+}
+
+.projects-info {
+  position: absolute;
+  width: 70rem;
+  text-align: center;
+  opacity: 0;
+  transition: transform 1s;
+}
+
+.projects-info.active {
+  animation: moveDiv 1s forwards;
+}
+
+@keyframes moveDiv {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5rem);
+  }
+}
+
+.info-heading {
+  font-size: 6rem;
+  font-weight: 400;
+  color: #ccc;
+  text-shadow: 0.1rem 0.1rem 0.1rem #ddd;
+}
+
+.info-text {
+  font-size: 2.2rem;
+  font-weight: 300;
+  margin: 2rem 0;
+  color: #ccc;
+}
+
+.info-btn {
+  width: 18rem;
+  height: 3.5rem;
+  background-image: linear-gradient(#a9633b, #bd8d72);
+  border: 1px solid #a9633b;
+  border-radius: 0.5rem;
+  box-shadow: 0.1rem 0.1rem 0.1rem #fff, -0.1rem -0.1rem 0.1rem #fff;
+  outline: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  color: #ddd;
+  cursor: pointer;
+}
+
+/* Using this class when we scroll to the Projects section (its half) */
+.change .laptop-screen {
+  transform: rotateX(0);
+  transition: transform 3s;
+}
+
+.change .loading-wrapper {
+  opacity: 1;
+  transition: opacity 1s 2s;
+}
+
+.change .progress-bar::after {
+  width: 100%;
+  transition: width 1.5s 3s;
+}
+
+.change .loading {
+  opacity: 0;
+  transition: 1s 5s;
+}
+
+.change .projects-info {
+  opacity: 1;
+  transition: opacity 1s 6s;
+}
+/* End of tablet opening section */
+
+/* Displaying project images on tablet screen */
+.projects-links {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 7rem;
+  display: none;
+}
+
+.project-links-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.project-links-item {
+  display: inline-block;
+  width: 9rem;
+  height: 6rem;
+  border: 1px solid #a9633b;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  position: relative;
+  background-color: #000;
+}
+
+.project-links-heading {
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-align: center;
+  position: absolute;
+  top: -4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: top 0.5s;
+  color: #ddd;
+}
+
+.project-links-item img {
+  width: 100%;
+  object-fit: cover;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.project-links-item:hover img {
+  opacity: 0.1;
+}
+
+.project-links-item:hover .project-links-heading {
+  top: 1rem;
+}
+/* End  Displaying project images on tablet screen */
+
+/* Star Wars API */
+.star-wars-project {
+  width: 100%;
+  padding: 8rem 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
+    url(../img/sw-bg.jpg) no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.project-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.info-wrapper {
+  width: 60%;
+  height: 40rem;
+  border: 1px solid #a9633b;
+  border-radius: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.15);
+  margin-right: 3rem;
+  padding: 2rem 3rem;
+  box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.6);
+}
+
+.img-wrapper {
+  height: 40rem;
+  position: relative;
+  max-width: 35%;
+  display: none;
+}
+
+.img-wrapper img {
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  border: 1px solid rgb(169, 99, 59);
+  border-radius: 0.5rem;
+  position: relative;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.6);
+}
+
+.img-wrapper::before {
+  content: " ";
+  background-color: #a9633b;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -4%;
+  right: -4%;
+  z-index: 0;
+}
+
+.inputs-wrapper {
+  width: 100%;
+}
+
+.star-wars-btn {
+  width: 60%;
+  margin: 3rem auto;
+  background-color: #a9633b;
+  color: #ccc;
+  text-align: center;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(243, 240, 240, 0.2);
+  transition: background-color 0.5s;
+}
+
+.star-wars-btn:hover {
+  background-color: #a14c1a;
+  cursor: pointer;
+}
+
+.input-group {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.input-group p {
+  width: 30%;
+  margin-right: 3rem;
+  font-size: 1.6rem;
+  color: #ccc;
+}
+
+.input-group input {
+  width: 60%;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.6rem;
+  color: #ccc;
+  border: 1px solid #a9633b;
+  border-radius: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.35);
+  outline: none;
+  text-transform: capitalize;
+}
+
+/* Rick and Morty Project */
+.rick-morty-project {
+  width: 100%;
+  padding: 8rem 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
+    url(../img/rick_and_morty_2.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.rick-morty-btn {
+  width: 70%;
+  margin: 3rem auto;
+  background-color: #a9633b;
+  color: #ccc;
+  text-align: center;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(243, 240, 240, 0.2);
+  transition: background-color 0.5s;
+}
+
+.rick-morty-btn:hover {
+  background-color: #a14c1a;
+  cursor: pointer;
+}
+
+.info-wrapper-rm {
+  margin-right: 0;
+}
+
+.img-wrapper-rm {
+  margin-right: 2rem;
+}
+
+.img-wrapper-rm::before {
+  left: -4%;
+  top: -4%;
+}
+
+/* Dogs API section */
+.dogs-project {
+  width: 100%;
+  padding: 8rem 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
+    url(../img/dog-bg.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.dogs-btn {
+  width: 70%;
+  margin: 3rem auto;
+  background-color: #a9633b;
+  color: #ccc;
+  text-align: center;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(243, 240, 240, 0.2);
+  transition: background-color 0.5s;
+}
+
+.select-breed {
+  width: 70%;
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  margin: 3rem auto;
+  border: 1px solid rgb(169, 99, 59);
+  border-radius: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.35);
+  outline: none;
+  color: #ccc;
+  text-align: center;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(243, 240, 240, 0.2);
+  transition: background-color 0.5s;
+  outline: none;
+}
+
+.select-breed option {
+  background-color: rgba(0, 0, 0, 0.85);
+  outline: none;
+}
+
+.dogs-btn:hover {
+  background-color: #a14c1a;
+  cursor: pointer;
+}
+
+.img-wrapper-dogs {
+  max-width: 25rem;
+  height: 18rem;
+  /* display: none; */
+}
+
+.img-wrapper img {
+  height: 100%;
+  width: 100%;
+}
+
+.input-group textarea {
+  font-family: "Noto Sans JP", sans-serif;
+  width: 60%;
+  max-width: 60%;
+  max-height: 20rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.6rem;
+  color: #ccc;
+  border: 1px solid #a9633b;
+  border-radius: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.35);
+  outline: none;
+  text-transform: capitalize;
+}
+
+/* Cats API project */
+.cats-project {
+  width: 100%;
+  padding: 4rem 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
+    url(../img/cat-bg.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.cats-project-container {
+  flex-direction: column;
+  height: auto;
+  align-items: center;
+}
+.cats-btn {
+  width: 30%;
+  margin: 3rem auto 5rem auto;
+  background-color: #a9633b;
+  color: #ccc;
+  text-align: center;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(243, 240, 240, 0.2);
+  transition: background-color 0.5s;
+}
+
+.cats-btn:hover {
+  background-color: #a14c1a;
+  cursor: pointer;
+}
+
+.cats-paragraph {
+  font-size: 2.2rem;
+  color: #ccc;
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.cats-heading {
+  margin-bottom: 1.5rem;
+}
+
+.img-wrapper-cats {
+  width: 40rem;
+  height: 30rem;
+}
+
+/* Contact section */
+.contact {
+  width: 100%;
+  height: 100vh;
+  background-color: #262626;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-wrapper {
+  width: 70%;
+  height: 50rem;
+  display: flex;
+  box-shadow: 0 3rem 7rem rgba(0, 0, 0, 0.5);
+}
+
+.contact-left-side {
+  width: 35%;
+  background: linear-gradient(rgba(85, 85, 85, 0.6), rgba(119, 119, 119, 0.9)),
+    url(../img/contact-bg.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.contact-right-side {
+  width: 65%;
+  background-color: #eee;
+  padding: 2rem 6rem 6rem 6rem;
+}
+
+.contact-heading {
+  color: #262626;
+  margin-bottom: 1rem;
+}
+
+.contact-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-input-group {
+  position: relative;
+}
+
+.contact-input-field {
+  width: 35rem;
+  background-color: transparent;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.4rem;
+  color: #4b4b4b;
+  border: none;
+  outline: none;
+  border-bottom: 0.2rem dashed #555;
+  margin: 1.5rem 0;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+}
+
+.contact-input {
+  height: 3.5rem;
+}
+
+.contact-textarea {
+  max-height: 7rem;
+  max-width: 35rem;
+}
+
+.contact-input-label {
+  position: absolute;
+  left: 0;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.5rem;
+  color: #4b4b4b;
+  text-transform: uppercase;
+  pointer-events: none;
+  bottom: 1.5rem;
+  transition: all 0.3s;
+  margin-bottom: 0.5rem;
+}
+
+.contact-input-message {
+  bottom: 4rem;
+}
+
+.contact-btn {
+  width: 35rem;
+  height: 5rem;
+  background-color: #a9633b;
+  color: #ccc;
+  border: none;
+  margin-top: 2rem;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+}
+
+.contact-btn:hover {
+  background-color: #a14c1a;
+  cursor: pointer;
+}
+.contact-paragraph {
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.contact-alert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 100;
+  display: none;
+}
+
+.contact-close {
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+  font-size: 4rem;
+  color: #ccc;
+  transition: color 0.5s;
+}
+
+.contact-close:hover {
+  cursor: pointer;
+  color: #a9633b;
+}
+
+.contact-alert-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 35rem;
+  border: 1px solid #a9633b;
+  border-radius: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-alert-field {
+  width: 80%;
+  color: #ccc;
+  padding: 0.5rem 2rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.contact-alert-message {
+  width: 100%;
+  color: #ccc;
+  padding: 0.5rem 2rem;
+  text-align: center;
+  font-size: 1.8rem;
+  background-color: #262626;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  height: 15rem;
+  background-color: #555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-copyright {
+  font-size: 1.6rem;
+  color: #161616;
+}
+
+.footer-social-list a {
+  margin: 0 2rem;
+}
+
+.footer-social-list i {
+  font-size: 2rem;
+  color: #161616;
+  transition: color 0.5s;
+}
+
+.footer-social-list a:hover i {
+  color: #ccc;
+}
+
+/* RESPONSIVE DESIGN */
+@media only screen and (max-width: 1200px) {
+  .section-heading {
+    font-size: 6rem;
+    margin-bottom: 3rem;
+  }
+
+  .navbar-container {
+    width: 90%;
+  }
+
+  .banner {
+    width: 55rem;
+  }
+
+  .banner-heading {
+    font-size: 3.5rem;
+  }
+
+  .projects {
+    padding: 6rem 0;
+  }
+
+  .projects-info {
+    top: 6rem;
+  }
+
+  .info-heading {
+    font-size: 4rem;
+  }
+
+  .info-text {
+    font-size: 1.8rem;
+    margin: 1.5rem 0;
+  }
+
+  .info-btn {
+    display: none;
+  }
+
+  .projects-links {
+    display: block;
+  }
+
+  .project-links-list {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .project-links-item {
+    width: 4.5rem;
+    height: 3rem;
+  }
+
+  .project-links-heading {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  html {
+    /* Setting 1rem = 9px */
+    font-size: 56.25%;
+  }
+
+  .links-container {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .banner {
+    left: 1rem;
+    bottom: 3rem;
+  }
+
+  .info-heading {
+    font-size: 3rem;
+  }
+
+  .info-text {
+    font-size: 1.6rem;
+    margin: 1.5rem 0;
+  }
+
+  .projects-links {
+    margin-top: 1.5rem;
+  }
+
+  .project-links-list {
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .project-links-item {
+    width: 3.5rem;
+    height: 2.5rem;
+  }
+
+  .project-links-item:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  .project-links-heading {
+    display: none;
+  }
+
+  .project-container {
+    flex-direction: column;
+  }
+
+  .star-wars-project {
+    padding: 6rem 0;
+  }
+
+  .info-wrapper {
+    width: 80%;
+    margin: 0 auto 5rem auto;
+  }
+
+  .img-wrapper {
+    margin: 0 auto;
+    max-width: 50%;
+  }
+
+  .star-wars-btn {
+    width: 90%;
+  }
+
+  .img-wrapper-rm {
+    order: 2;
+  }
+
+  .rick-morty-btn {
+    width: 90%;
+  }
+
+  .cats-btn {
+    width: 90%;
+  }
+
+  .section-breaker {
+    display: none;
+  }
+
+  .contact-left-side {
+    display: none;
+  }
+
+  .contact-wrapper {
+    width: 90%;
+  }
+
+  .contact-right-side {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-social-list {
+    order: 1;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .footer-copyright {
+    order: 2;
+    text-align: center;
+  }
+
+  .contact-alert-container {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    /* Setting 1rem to 8px */
+    font-size: 50%;
+  }
+
+  .banner {
+    width: 40rem;
+    height: 35rem;
+  }
+
+  .projects-info {
+    top: 1.5rem;
+    width: 40rem;
+  }
+
+  .info-heading {
+    width: 40rem;
+    margin: 0 auto 1rem auto;
+  }
+
+  .info-text {
+    width: 40rem;
+    margin: 0 auto 2rem auto;
+  }
+
+  .info-wrapper {
+    width: 90%;
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .inputs-wrapper {
+    width: 100%;
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+
+  .input-group p {
+    margin-bottom: 0.5rem;
+  }
+
+  .input-group input {
+    width: 95%;
+  }
+
+  .input-group textarea {
+    width: 95%;
+    max-width: 95%;
+  }
+  .img-wrapper {
+    max-width: 75%;
+  }
+
+  .select-breed {
+    width: 95%;
+  }
+
+  .contact-wrapper {
+    width: 100%;
+  }
+
+  .contact-right-side {
+    width: 90%;
+    padding: 1rem 2rem;
+  }
+
+  .footer-copyright {
+    font-size: 1.2rem;
+  }
+}
